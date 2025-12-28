@@ -1,14 +1,13 @@
 #include <stdio.h>
 #include <unistd.h>
-
 int main()
 {
-    if (fork() || fork())
+    for (int i = 1; i < 5; i++)
     {
         fork();
     }
-    printf("hello\n");
+    printf("1\n");
     return 0;
 }
 
-// how many time hello print in output?
+// how many time 1 print in output?
